@@ -187,6 +187,9 @@ on boot
     chown system system /mnt/vendor/persist/vpp/tunings.txt
     chmod 0666 /mnt/vendor/persist/vpp/tunings.txt
 
+    # default country code
+    setprop ro.boot.wificountrycode 00
+
 on property:persist.vendor.sys.fp.fod.large_field=1
     write sys/bus/i2c/devices/3-0049/fod_area 1
 
