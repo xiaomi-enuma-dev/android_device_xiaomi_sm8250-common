@@ -20,7 +20,6 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import com.android.settingslib.widget.R;
 
 import org.lineageos.settings.rotate.RotateTweaksSettingsFragment;
 
@@ -31,7 +30,8 @@ public class RotateTweaksActivity extends CollapsingToolbarBaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getFragmentManager().beginTransaction().replace(R.id.content_frame,
+        getFragmentManager().beginTransaction().replace(
+                com.android.settingslib.collapsingtoolbar.R.id.content_frame,
                 new RotateTweaksSettingsFragment(), TAG_ROTATE).commit();
     }
 
