@@ -20,6 +20,7 @@ typedef struct variant_info {
     std::string marketname;
     std::string model;
     std::string build_fingerprint;
+    std::string hwsku;
 
     bool nfc;
 } variant_info_t;
