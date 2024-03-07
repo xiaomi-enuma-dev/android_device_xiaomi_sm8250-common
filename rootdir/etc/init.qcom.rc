@@ -69,6 +69,7 @@ on post-fs
     mount none /mnt/vendor/dsp/fastrpc_shell_3 /vendor/dsp/cdsp/fastrpc_shell_3 bind
 
 on early-boot
+    write /dev/ipa 1
     # set RLIMIT_MEMLOCK to 64KB
     setrlimit 8 65536 65536
     # Allow subsystem (modem etc) debugging
