@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020-2022 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+     <!-- Per-app refresh rate -->
+     <string name="refresh_title">每個應用程式的刷新率</string>
+     <string name="refresh_summary">設定特定應用程式的最大更新率</string>
+     <string name="refresh_default">預設</string>
+
+    <!-- Rotate Tweaks -->
+    <string name="rotate_title">旋轉鎖定調整</string>
+    <string name="rotate_summary">有關旋轉鎖定行為的更多選項</string>
+    <string name="rotate_behavior_title">應用程式啟動行為的輪換</string>
+    <string name="rotate_default">預設行為（應用新方向）</string>
+    <string name="rotate_lock">鎖定方向（MIUI for Pad）</string>
+    <string name="rotate_restore">關閉時復原（iPad OS）</string>
+    <string name="rotate_tweaks_footer">"僅更改方向鎖定行為\n*少數應用程式無法如預期運行"</string>
+
+     <!-- Thermal Profiles -->
+     <string name="thermal_title">溫控配置</string>
+     <string name="thermal_summary">調整每個應用程式的熱量設定檔以獲得最佳效能</string>
+     <string name="thermal_default">預設</string>
+     <string name="thermal_benchmark">基準</string>
+     <string name="thermal_browser">瀏覽器</string>
+     <string name="thermal_camera">相機</string>
+     <string name="thermal_dialer">撥號器</string>
+     <string name="thermal_gaming">遊戲</string>
+     <string name="thermal_streaming">串流</string>
+
+    <!-- High Touch Polling -->
+    <string name="htsr_title">觸摸反應能力</string>
+    <string name="htsr_enable_title">提升觸摸反應能力</string>
+    <string name="htsr_enable_summary">提高觸控輪詢率以減少延遲</string>
+</resources>

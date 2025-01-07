@@ -15,6 +15,11 @@
      limitations under the License.
 -->
 <resources>
+     <!-- Per-app refresh rate -->
+     <string name="refresh_title">每个应用的刷新率</string>
+     <string name="refresh_summary">为特定应用程序设置最大刷新率</string>
+     <string name="refresh_default">默认</string>
+
     <!-- Rotate Tweaks -->
     <string name="rotate_title">旋转锁定行为</string>
     <string name="rotate_summary">更多旋转锁定设置</string>
@@ -23,4 +28,20 @@
     <string name="rotate_lock">保持锁定的方向打开（MIUI for Pad）</string>
     <string name="rotate_restore">退出后恢复锁定的方向（iPad OS）</string>
     <string name="rotate_tweaks_footer">"仅在锁定方向后生效\n*少数应用在某些情况不遵循此设置"</string>
+
+     <!-- Thermal Profiles -->
+     <string name="thermal_title">温控配置</string>
+     <string name="thermal_summary">调整每个应用程序的温控配置文件以获得最佳性能</string>
+     <string name="thermal_default">默认</string>
+     <string name="thermal_benchmark">基准测试</string>
+     <string name="thermal_browser">浏览器</string>
+     <string name="thermal_camera">相机</string>
+     <string name="thermal_dialer">电话</string>
+     <string name="thermal_gaming">游戏</string>
+     <string name="thermal_streaming">流媒体</string>
+
+    <!-- High Touch Polling -->
+    <string name="htsr_title">触摸响应能力</string>
+    <string name="htsr_enable_title">提高触摸响应能力</string>
+    <string name="htsr_enable_summary">提高触摸轮询率以减少延迟</string>
 </resources>
