@@ -150,8 +150,13 @@ TARGET_BOARD_PLATFORM := kona
 TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
-ifneq ($(TARGET_IS_TABLET),true)
+ifeq ($(filter dagu elish pipa,$(TARGET_DEVICE)),)
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor_phone.prop
+ifneq ($(filter enuma,$(TARGET_DEVICE)),)
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor-ss.prop
+else
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor-ds.prop
+endif
 endif
 
 # Recovery
@@ -220,8 +225,13 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml \
     vendor/lineage/config/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
-ifneq ($(TARGET_IS_TABLET),true)
+ifeq ($(filter dagu elish pipa,$(TARGET_DEVICE)),)
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest_phone.xml
+ifneq ($(filter enuma,$(TARGET_DEVICE)),)
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest-ss.xml
+else
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest-ds.xml
+endif
 endif
 DEVICE_MATRIX_FILE += hardware/qcom-caf/common/compatibility_matrix.xml
 ODM_MANIFEST_SKUS += nfc
