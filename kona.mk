@@ -408,6 +408,9 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     usb_compositions.conf
 
+PRODUCT_PACKAGES += \
+    NcmTetheringOverlay
+
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
